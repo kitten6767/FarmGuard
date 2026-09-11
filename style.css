@@ -1,0 +1,46 @@
+
+body {
+    font-family: Arial,sans-serif;
+    margin: 0;
+    background: #f1f5f2;
+}
+header {
+    background:#2e7d32;
+    color:white;
+    text-align: center;
+    padding: 25px;
+}
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+.cards {
+    display:flex;
+    gap: 20px;
+}
+.card{
+    background:white;
+    padding:20px;
+    flex: 1;
+    text-align:center;
+    border-radius: 10px;
+}
+.prediction {
+    background:white;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+input {
+    display: block;
+    margin: 10px 0 20 px;
+    padding:10px;
+}
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+     
+}
+
+
+

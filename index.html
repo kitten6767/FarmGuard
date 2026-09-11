@@ -1,0 +1,82 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FarmGuard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>FarmGuard</h1>
+    </header>
+
+    <main>
+
+        <section class="dashboard">
+            <h2>Farm Dashboard</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Water Level</h3>
+                    <p id="water">65%</p>
+                </div>
+
+                <div class="card">
+                    <h3>Drought Risk</h3>
+                    <p id="drought">Low</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="prediction">
+
+            <h2>Risk Prediction</h2>
+
+            <label>Water Level (%)</label>
+            <input type="number" id="waterInput">
+
+            <label>Rainfall (mm)</label>
+            <input type="number" id="rainInput">
+
+            <button onclick="predictionRisk()">Predict Risk</button>
+
+            <h3 id="result"></h3>
+
+        </section>
+
+    </main>
+
+    <script>
+        function predictionRisk() {
+
+            let water = Number(document.getElementById("waterInput").value);
+            let rain = Number(document.getElementById("rainInput").value);
+
+            let result = document.getElementById("result");
+
+            if (water < 30 && rain < 20) {
+                result.innerHTML = "HIGH DROUGHT RISK";
+            }
+            else if (water > 80 && rain > 50) {
+                result.innerHTML = "HIGH FLOOD RISK";
+            }
+            else {
+                result.innerHTML = "LOW DISASTER RISK";
+            }
+        }
+    </script>
+
+</body>
+</html>
+```
+
+
+
+
+
+
+    
